@@ -1,0 +1,31 @@
+#login {
+position: absolute;
+left: 500px;
+top: 100px;
+background-color: black;
+opacity: 0.7;
+padding: 20px;
+color: white;
+}
+@font-face {
+font-family: main;
+    src: url(librefranklin-extralight.ttf);
+}
+body {
+font-family: main,arial;
+background-image: url("backgroundEditMain.jpg");
+}
+h1 {
+padding-bottom: 20px;
+}
+a:link, a:visited {
+    background-color: #4d4d4d;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+align: center;
+}

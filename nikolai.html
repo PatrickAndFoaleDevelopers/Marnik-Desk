@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nikolai Patrick-MARNIK DESK</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="deskstyle.css">
+<script src="user.js"></script>
+<script src="notescript.js"></script>
+</head>
+<body>
+<div class="nav">
+<a href="https://www.weebly.com" target="_blank" style="color:blue">Weebly</a>
+<a href="https://snappigs.weebly.com" target="_blank" style="color:blue">Snap Pigs Website</a>
+<a href="https://marnikarchitecture.weebly.com" target="_blank"style="color:blue" >MarNik Architecture</a>
+<a href="https://www.google.com" target="_blank" style="color:blue;">Google Search</a>
+<a href="index.html">Log Out</a>
+</div>
+<div  class="head">
+<h3>MARNIK DESK</h3>
+<p id="demo"></p>
+<script>
+var d = new Date().toLocaleString("en-AU", {timeZone: "Australia/Adelaide"})
+document.getElementById("demo").innerHTML = d;
+d.toDateString();
+</script>
+<p>WELCOME</p>
+<h1>NIKOLAI PATRICK</h1>
+<a href="index.html">Log Out</a>
+
+<div id="scribble-pad"><pre id="scribble" contenteditable="true" onkeyup="storeUserScribble(this.id);"></pre></div>
+
+
+<script>
+  getUserScribble();
+</script>
+<div id="diary">
+<p>diary dates</p>
+<iframe src="diary.html" height="500px" style="align: left;" width="500px"></iframe>
+</div>
+</div>
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">

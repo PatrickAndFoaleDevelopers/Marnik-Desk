@@ -1,0 +1,64 @@
+@font-face{
+src: url(TF2secondary.ttf);
+font-family: main;
+}
+#diary{
+float: right;
+}
+.nav{
+background-color: #66CCFF;
+text-align:left;
+font-size:10pt;
+height: auto;
+padding:10px;
+}
+.head{
+font-family: main;
+background-color:#cceeff;
+background-size: 100%;
+background-height: 600%;
+color:black;
+height:auto;
+text-align:center;
+font-size:15pt;
+padding: 10px;
+}
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+#scribble-pad {
+       margin-left:auto;
+       margin-right:auto;  
+       height: 475px;
+       width: 475px;
+       background-repeat: no-repeat;
+}  
+
+#scribble {
+      white-space: pre-wrap;       /* css-3 */
+      white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+      white-space: -pre-wrap;      /* Opera 4-6 */
+      white-space: -o-pre-wrap;    /* Opera 7 */
+      word-wrap: break-word;       /* Internet Explorer 5.5+ */
+      max-width: 300px;
+      padding: 120px 200px 100px 0px;
+      color: #486891;
+      font-family:  Arial,sans-serif;
+      font-size: 140%;
+      font-style: italic; 
+      font-weight:bold; 
+      line-height: 1.5em; 
+}
+
+.c-link {
+      color: #486891;
+      font-family:  Arial,sans-serif;
+      font-size: 95%;
+      font-weight:bold; 
+      text-decoration: none;         
+}

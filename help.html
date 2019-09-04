@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Help - MarNik V2</title>
+  <link rel="stylesheet" href="vtwostyle.css" type="text/css">
+  <script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 200);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+  </head>
+  <body onload="myFunction()">
+  <div id="main">
+  <h1></h1>
+  </div>
+  </body>
+  <script>
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+     
+</html>

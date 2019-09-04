@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>User - MarnikV2</title>
+      <link rel="stylesheet" href="vtwostyle.css" type="text/css">
+      <script>
+         var myVar;
+         
+         function myFunction() {
+             myVar = setTimeout(showPage, 200);
+         }
+         
+         function showPage() {
+           document.getElementById("loader").style.display = "none";
+           document.getElementById("myDiv").style.display = "block";
+         }
+      </script>
+   </head>
+   <body onload="myFunction()">
+      <div id="main">
+         <button class="openbtn" onclick="openNav()">☰ </button>  
+         <div style="display:none;" id="myDiv" class="animate-bottom">
+            <div id="loader"></div>
+            <div class="menu">
+               <div class="logout" >
+                  <span><a href="index.html">
+                  <img src="logouticon.png" alt="log out" height="50px" width="50px" >
+                  </a></span>
+               </div>
+            </div>
+            <div id="mySidebar" class="sidebar">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+               <a href="marnikvtwo.html">Home</a>
+               <a href="weather.html">Weather</a>
+               <a href="#">Clients</a>
+               <a href="about.html">About</a>
+            </div>
+         </div>
+         <h1 align="center">Marnik Desk</h1>
+         <h3> tools </h3>
+         <a href="#">
+         <img src="icons/16/mimetypes/text-vcalender.svg" alt="calender" height="32px" width="32px" >
+         </a>
+      </div>
+   </body>
+   <script>
+      function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+      }
+   </script>
+</html>
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather center</title>
+  <link rel="stylesheet" href="vtwostyle.css" type="text/css">
+  </head>
+  <body onload="myFunction()">
+  <div id="main">
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <div id="loader"></div>
+  <div class="menu">
+  <div class="logout" >
+  <a href="index.html">
+  <img src="power_button.png" height="50px" width="50px" alt="log out" >
+  </a>
+ <h1>Marnik Desk</h1>
+  </div>
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="marnikvtwo.html">Home</a>
+  <a href="weather.html">Weather</a>
+  <a href="#">Clients</a>
+  <a href="about.html">About this version</a>
+</div>
+  </div>
+  </div>
+  </div>
+  
+<div align="left"><div id="cont_472dceb98f34abd92cb38fc9ccf88475"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/472dceb98f34abd92cb38fc9ccf88475"></script></div></div>
+<table>
+<tr>
+<td>
+<div id="cont_95384cde3b0b86da9b8d01c004530807"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/95384cde3b0b86da9b8d01c004530807"></script></div>
+</td>
+</tr>
+<tr>
+<td>
+<div id="cont_3929bbb02ffc89aaa3d1030243426675"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/3929bbb02ffc89aaa3d1030243426675"></script></div>
+</td>
+</tr>
+</table>
+  </body>
+  <script>
+  var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 200);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</html>
